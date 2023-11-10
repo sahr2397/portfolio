@@ -8,8 +8,9 @@ import {
   Text,
   createIcon,
   useColorModeValue,
-} from "@chakra-ui/react";
-import ProfileArray from "./ProfileArray";
+} from '@chakra-ui/react'
+import Typewriter from 'typewriter-effect'
+import ProfileArray from './ProfileArray'
 
 export default function Header({ color }) {
   const profile = ProfileArray()
@@ -43,19 +44,30 @@ export default function Header({ color }) {
             fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
             lineHeight={'110%'}
           >
-            
-            <Text> Hi, my name is <i>{profile.headerName} </i> </Text> <br />
+            <Text>
+              {' '}
+              Hi, my name is <i>{profile.headerName} </i>{' '}
+            </Text>{' '}
+            <br />
             <Text as={'span'} color={`${color}.400`}>
-            I'm a <i>
-            {profile.headerRole}
-            </i>
-              
+              I'm a{' '}
+              <i>
+                <Typewriter
+                  options={{
+                    strings: ['Software Developer.', 'UI/UX Designer.','Life Long Learner.'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </i>
             </Text>
           </Heading>
+          
           <Text
             color={'gray.500'}
             fontSize={{ base: 'lg', sm: 'xl', md: '2xl' }}
           >
+          
             {profile.headerDesc}
           </Text>
           <Stack
