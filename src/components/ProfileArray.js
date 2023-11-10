@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const parseProfile = (mdContent) => {
   const profile = {
@@ -7,6 +7,7 @@ const parseProfile = (mdContent) => {
     headerRole: "",
     headerDesc: "",
     about: "",
+    hobbies:"",
     contact: "",
     linkedin: "",
     github: "",
@@ -29,7 +30,8 @@ const parseProfile = (mdContent) => {
           profile.headerDesc = lines[++i].substr(2).trim();
           break;
         case "About":
-          profile.about = lines[++i].trim();
+          profile.about = lines[++i].substr(2).trim();
+          profile.hobbies = lines[++i].substr(2).trim();
           break;
         case "Contact":
           profile.contact = lines[++i].trim();

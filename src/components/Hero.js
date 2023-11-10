@@ -3,11 +3,9 @@ import {
   Button,
   Container,
   Heading,
-  Icon,
   Stack,
   Text,
-  createIcon,
-  useColorModeValue,
+  createIcon
 } from '@chakra-ui/react'
 import Typewriter from 'typewriter-effect'
 import ProfileArray from './ProfileArray'
@@ -97,7 +95,7 @@ export default function Header({ color }) {
             >
               Contact Me
             </Button>
-            <Box>
+            {/* <Box>
               <Icon
                 as={Arrow}
                 color={useColorModeValue('gray.800', 'gray.300')}
@@ -116,7 +114,7 @@ export default function Header({ color }) {
               >
                 Click me!
               </Text>
-            </Box>
+            </Box> */}
           </Stack>
         </Stack>
       </Container>
