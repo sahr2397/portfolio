@@ -32,7 +32,10 @@
 - ![logo512](../assets/gocheckLogo.jpeg)
 - Tags: 2018
 - Badges:
-  - Badge [blue]
+  - Python [blue]
+  - PyQT4 [blue]
+  - BeautifulSoup [blue]
+  - Selenium [blue]
 - List Items:
   - Web scraping and data collection using Python,PyQT4, BeautifulSoup and Selenium.
   - Prepared and pre-processed the scraped data for management and use in an acceptable format.
