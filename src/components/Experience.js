@@ -1,27 +1,18 @@
+
 import {
-  Divider,
-  Stack,
-  Text,
-  Container,
   Box,
-  HStack,
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Flex,
-  Badge,
-  Image,
-  List,
-  ListItem,
-  ListIcon,
   Button,
   ButtonGroup,
   Center,
+  Container,
+  Divider,
+  HStack,
+  Stack,
+  Text
 } from "@chakra-ui/react";
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
-import { useState, useEffect } from "react";
+import ExpCard from "./ExpCard";
 import ExperienceArray from "./ExperienceArray";
 import TagsArray from "./TagsArray";
 
@@ -39,7 +30,7 @@ export default function Experience({ color }) {
   const handleSelected = (value) => {
     setSelected(value);
   };
-
+console.log(experience)
   return (
     <>
       <Container maxW={"3xl"} id="experience">
@@ -75,7 +66,10 @@ export default function Experience({ color }) {
               .filter((exp) => exp.tags.includes(selected))
               .map((exp) => (
                 <Fade bottom>
-                  <Card key={exp.company} size="sm">
+                  <ExpCard exp={exp} color={`${color}`}/>
+
+                
+                  {/* <Card key={exp.company}  colorScheme="messenger" size="md">
                     <CardHeader>
                       <Flex justifyContent="space-between">
                         <HStack>
@@ -118,7 +112,7 @@ export default function Experience({ color }) {
                         ))}
                       </HStack>
                     </CardFooter>
-                  </Card>
+                  </Card> */}
                 </Fade>
               ))}
           </Stack>

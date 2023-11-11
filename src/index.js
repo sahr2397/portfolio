@@ -12,7 +12,7 @@ import Fonts from "./Fonts";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ChakraProvider theme={theme}>
+  <ChakraProvider theme={theme} resetCss={false}>
     <Fonts />
     <React.StrictMode>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
