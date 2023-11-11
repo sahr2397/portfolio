@@ -18,10 +18,9 @@ import {
 // Assets
 
 function ExpCard({exp,color}) {
-  let boxBg = useColorModeValue('white !important', `${color}.800 !important`)
+  let boxBg = useColorModeValue('gray.100 !important', `${color}.800 !important`)
   let secondaryBg = useColorModeValue('gray.50', 'whiteAlpha.100')
-  console.log(exp)
-  console.log(color)
+  
 
   return (
     <Flex
@@ -34,7 +33,7 @@ function ExpCard({exp,color}) {
       <Box p="20px">
         <Flex justifyContent="space-between">
         <HStack>
-                          <Image src={exp.image} h={50} />
+                          <Image src={exp.image} borderRadius='full' h={50} />
                           <Box px={2} align="left">
                             <Text fontWeight={600}>{exp.company}</Text>
                             <Text>{exp.position}</Text>

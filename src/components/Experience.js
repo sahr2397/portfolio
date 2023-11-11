@@ -30,7 +30,7 @@ export default function Experience({ color }) {
   const handleSelected = (value) => {
     setSelected(value);
   };
-console.log(experience)
+
   return (
     <>
       <Container maxW={"3xl"} id="experience">
