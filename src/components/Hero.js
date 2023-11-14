@@ -121,8 +121,8 @@ export default function Header({ color }) {
     </>
   )
 }
-
-const Arrow = createIcon({
+// eslint-disable-next-line
+const Arrow = createIcon({ 
   displayName: 'Arrow',
   viewBox: '0 0 72 24',
   path: (

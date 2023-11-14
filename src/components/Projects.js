@@ -1,25 +1,25 @@
 import {
-  Divider,
-  Stack,
-  Text,
-  Container,
+  Badge,
   Box,
-  HStack,
   Button,
   ButtonGroup,
   Card,
   CardBody,
-  Image,
-  Heading,
-  SimpleGrid,
-  Badge,
-  Link,
   Center,
+  Container,
+  Divider,
+  HStack,
+  Heading,
+  Image,
+  Link,
+  SimpleGrid,
+  Stack,
+  Text,
 } from "@chakra-ui/react";
-import { Fade } from "react-reveal";
 import { useState } from "react";
-import ProjectsArray from "./ProjectsArray";
+import { Fade } from "react-reveal";
 import OtherProjectsArray from "./OtherProjectsArray";
+import ProjectsArray from "./ProjectsArray";
 import TagsArray from "./TagsArray";
 
 export default function Projects({ color }) {
@@ -53,15 +53,17 @@ export default function Projects({ color }) {
           </Stack>
           <Stack px={4} spacing={4}>
             {projects.map((project) => (
+              
+
+              
               <Fade bottom>
                 <Card
                   key={project.name}
-                  direction={{
-                    base: "column",
-                  }}
+                  
                   overflow="hidden"
                 >
                   <Image objectFit="cover" src={project.image} />
+                  
 
                   <Stack>
                     <CardBody align="left">
@@ -92,6 +94,7 @@ export default function Projects({ color }) {
                   </Stack>
                 </Card>
               </Fade>
+              
             ))}
           </Stack>
           <Text color={"gray.600"} fontSize={"xl"} px={4}>

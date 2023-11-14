@@ -4,21 +4,21 @@ import React from 'react';
 // Chakra imports
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import {
-    Badge,
-    Box,
-    Flex,
-    HStack,
-    Image,
-    List,
-    ListIcon,
-    ListItem,
-    Text,
-    useColorModeValue,
+  Badge,
+  Box,
+  Flex,
+  HStack,
+  Image,
+  List,
+  ListIcon,
+  ListItem,
+  Text,
+  useColorModeValue,
 } from '@chakra-ui/react';
 // Assets
 
 function ExpCard({exp,color}) {
-  let boxBg = useColorModeValue('gray.100 !important', `${color}.800 !important`)
+  let boxBg = useColorModeValue('gray.100 !important', `gray.700 !important`)
   let secondaryBg = useColorModeValue('gray.50', 'whiteAlpha.100')
   
 
