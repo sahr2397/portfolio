@@ -67,7 +67,7 @@ function ExpCard({exp,color}) {
             {exp.listItems.map((item, index) => (
               <ListItem key={index}>
                 <ListIcon
-                  boxSize={6}
+                  boxSize={4}
                   as={ChevronRightIcon}
                   color={`${color}.400`}
                 />

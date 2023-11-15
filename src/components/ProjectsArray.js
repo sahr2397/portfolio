@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const parseProjects = (mdContent) => {
   const projects = [];
@@ -9,8 +9,16 @@ const parseProjects = (mdContent) => {
 
     if (line.startsWith("## ")) {
       const name = line.substr(3).trim();
-      const description = lines[++i].trim();
+//Desc
+      const description = [];
+      while (lines[++i] && !lines[i].startsWith("- Description:")) {}
+      while (lines[++i] && lines[i].startsWith("  - ")) {
+        const Line = lines[i].substr(4).trim()
+        description.push(Line);
+      }
+    
       const imageLine = lines[++i];
+      
       const image = imageLine.match(/!\[(.*)\]\((.*)\)/)[2];
       const tags = lines[++i].split(":")[1].trim();
       const badges = [];
@@ -30,7 +38,13 @@ const parseProjects = (mdContent) => {
         const buttonHref = buttonLine[1].split("]")[0].trim();
         buttons.push({ text: buttonText, href: buttonHref });
       }
-
+      console.log(name,
+        description,
+        image,
+        [tags],
+        badges,
+        buttons,)
+      
       projects.push({
         name,
         description,
