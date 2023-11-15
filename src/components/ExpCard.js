@@ -26,7 +26,7 @@ function ExpCard({exp,color}) {
     <Flex
       borderRadius="20px"
       bg={boxBg}
-      h="345px"
+      h="100%"
       
       direction="column"
     >
@@ -77,10 +77,10 @@ function ExpCard({exp,color}) {
           </List>
         </Text>
         <Flex>
-          <Flex me="25px">
-            <HStack spacing={2}>
+          <Flex me="25px" >
+            <HStack spacing={2} wrap="wrap" >
               {exp.badges.map((badge) => (
-                <Badge key={badge.name} colorScheme={badge.colorScheme}>
+                <Badge key={badge.name} colorScheme={badge.colorScheme} my="2 !important">
                   {badge.name}
                 </Badge>
               ))}
