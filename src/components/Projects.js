@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import {
   Badge,
   Box,
@@ -66,8 +66,8 @@ export default function Projects({ color }) {
             alignItems="center"
           >
             <Stack px={4} spacing={4}>
-              {projects.map((project) => (
-                <Fade bottom>
+              {projects.map((project,index) => (
+                <Fade key={index} bottom>
                   <Flex
                     align="center"
                     justify={{
@@ -75,7 +75,10 @@ export default function Projects({ color }) {
                       md: 'space-around',
                       xl: 'space-between',
                     }}
-                    direction={{ base: 'column-reverse', md: 'row' }}
+                    direction={{
+                      base: 'column-reverse',
+                      md: index % 2 === 0 ? 'row' : 'row-reverse',
+                    }}
                     wrap="no-wrap"
                     px={8}
                     mb={16}
@@ -135,12 +138,12 @@ export default function Projects({ color }) {
                         {project.buttons.map((button) => (
                           <a key={button.text} href={button.href}>
                             <Button color={`${color}.400`}>
-                              {button.text}
+                              {button.text} <ExternalLinkIcon mx={2}/>
                             </Button>
                           </a>
                         ))}
                       </HStack>
-                      <HStack pt={4} spacing={2}>
+                      {/* <HStack pt={4} spacing={2}>
                         {project.badges.map((badge) => (
                           <Badge
                             key={badge.text}
@@ -149,7 +152,7 @@ export default function Projects({ color }) {
                             {badge.text}
                           </Badge>
                         ))}
-                      </HStack>
+                      </HStack> */}
                     </Stack>
                   </Flex>
 
