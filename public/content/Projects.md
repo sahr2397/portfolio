@@ -5,7 +5,7 @@
   - Currently exploring AI-driven analytics to enhance predictive capabilities and improve decision-making within the healthcare data management system.
 
 - ![600x200](../assets/p2.png)
-- Tags: Category 2
+- Tags: CuraSigna
 - Badges:
   - Badge [blue]
 - Buttons:
@@ -26,13 +26,28 @@
 - Buttons:
 
 
-## Project C
+## Demand Forecasting Model
 - Description:
-  - Line 1
+  - Developed a demand forecasting model for Unilever's consumer goods in France and Egypt, utilizing Python, Numpy, Pandas, Scikit-learn, Pytorch Tabular, and Matplotlib.
+  - Extracted and transformed time series data into about 180 attributes, achieving an 80% accurate rolling 2-year forecast for individual retailers. Improved accuracy by 5%, translating to multi-million-dollar business impact.
 
-- ![600x200](https://via.placeholder.com/600x200)
-- Tags: Category 3
+- ![600x200](../assets/p3.png)
+- Tags: Unilever
 - Badges:
   - Badge [blue]
 - Buttons:
-  - Link [https://example.com]
+ 
+
+## Blockchain-Based Electronic Health Record (EHR) Framework
+- Description:
+  - Identified common issues in the country's medical services, including challenges with doctors' referral processes, data transfer between health institutions, and patient portal accessibility.
+  - Developed a comprehensive Electronic Health Record (EHR) Framework on Blockchain, addressing issues like data privacy, accessibility, and interoperability. 
+
+- ![600x200](../assets/p4.png)
+- Tags: VTU
+- Badges:
+  - Badge [blue]
+- Buttons:
+  - Check it out the Published Paper [https://doi.org/10.1109/ICCCI50826.2021.9402689]
+  
+ 

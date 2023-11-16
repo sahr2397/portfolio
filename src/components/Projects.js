@@ -39,11 +39,11 @@ export default function Projects({ color }) {
     setSelected(value)
   }
 
-  console.log(projects)
+
 
   return (
     <>
-      {' '}
+    
       <VStack>
         <Container maxW={'3xl'} id="projects">
           <Stack align="center" direction="row" pb={{ base: 8, md: 14 }}>
@@ -66,7 +66,7 @@ export default function Projects({ color }) {
             alignItems="center"
           >
             <Stack px={4} spacing={4}>
-              {projects.map((project,index) => (
+              {projects.map((project, index) => (
                 <Fade key={index} bottom>
                   <Flex
                     align="center"
@@ -103,15 +103,21 @@ export default function Projects({ color }) {
                     >
                       <Heading
                         as="h1"
+                        isFullWidth
                         size="xl"
                         fontWeight={400}
                         fontFamily={'Nelphim'}
                         color="primary.800"
                         textAlign={['center', 'center', 'left', 'left']}
                         pb={8}
+                        minW={{ base: '80%', md: '40%' }}
                       >
                         {project.name}
+                        <Text fontSize={'sm'} textAlign={'left'} color={`${color}.400`} >
+                          {project.tags[0]}
+                        </Text>
                       </Heading>
+
                       <Text
                         color={'gray.600'}
                         fontSize={'md'}
@@ -138,7 +144,7 @@ export default function Projects({ color }) {
                         {project.buttons.map((button) => (
                           <a key={button.text} href={button.href}>
                             <Button color={`${color}.400`}>
-                              {button.text} <ExternalLinkIcon mx={2}/>
+                              {button.text} <ExternalLinkIcon mx={2} />
                             </Button>
                           </a>
                         ))}
