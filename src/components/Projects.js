@@ -1,43 +1,43 @@
 import { ChevronRightIcon, ExternalLinkIcon } from '@chakra-ui/icons'
 import {
-  Badge,
+  // Badge,
   Box,
   Button,
-  ButtonGroup,
-  Card,
-  CardBody,
-  Center,
+  // ButtonGroup,
+  // Card,
+  // CardBody,
+  // Center,
   Container,
   Divider,
   Flex,
   HStack,
   Heading,
   Image,
-  Link,
+  // Link,
   List,
   ListIcon,
   ListItem,
-  SimpleGrid,
+  // SimpleGrid,
   Stack,
   Text,
   VStack,
 } from '@chakra-ui/react'
-import { useState } from 'react'
+// import { useState } from 'react'
 import { Fade } from 'react-reveal'
-import OtherProjectsArray from './OtherProjectsArray'
+// import OtherProjectsArray from './OtherProjectsArray'
 import ProjectsArray from './ProjectsArray'
-import TagsArray from './TagsArray'
+// import TagsArray from './TagsArray'
 
 export default function Projects({ color }) {
   const projects = ProjectsArray()
-  const others = OtherProjectsArray()
-  const options = TagsArray('ProjectsTags')
+  // const others = OtherProjectsArray()
+  // const options = TagsArray('ProjectsTags')
 
-  const [selected, setSelected] = useState('All')
+  // const [selected, setSelected] = useState('All')
 
-  const handleSelected = (value) => {
-    setSelected(value)
-  }
+  // const handleSelected = (value) => {
+  //   setSelected(value)
+  // }
 
 
 
@@ -201,7 +201,8 @@ export default function Projects({ color }) {
                 </Fade>
               ))}
             </Stack>
-            <Text color={'gray.600'} fontSize={'xl'} px={4}>
+            {/* other projects section */}
+            {/* <Text color={'gray.600'} fontSize={'xl'} px={4}>
               Other Projects
             </Text>
             <Center px={4}>
@@ -271,7 +272,7 @@ export default function Projects({ color }) {
                     </Card>
                   </Fade>
                 ))}
-            </SimpleGrid>
+            </SimpleGrid> */}
           </Stack>
         </Container>
       </VStack>
