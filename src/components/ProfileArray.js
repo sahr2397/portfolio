@@ -9,6 +9,7 @@ const parseProfile = (mdContent) => {
     about: "",
     hobbies:"",
     contact: "",
+    contactPoints:[],
     linkedin: "",
     github: "",
     email: "",
@@ -35,6 +36,24 @@ const parseProfile = (mdContent) => {
           break;
         case "Contact":
           profile.contact = lines[++i].trim();
+          const contactPoints = ["1", "2"];
+          const points=[];
+          for (const point of contactPoints) {
+            const pLine = lines[++i].trim();
+            if (pLine.startsWith(point)) {
+              const qA={
+                q:"",
+                a:"",
+              };
+
+              qA.q=pLine.split("?")[0]+"?";
+              qA.a=pLine.split("?")[1];
+              points.push(qA);
+            }
+            
+          }
+          profile.contactPoints=points;
+          
           const contactLinks = ["LinkedIn", "GitHub", "Email"];
           for (const link of contactLinks) {
             const linkLine = lines[++i].substr(2).trim();
@@ -64,6 +83,7 @@ const ProfileArray = () => {
     headerDesc: "",
     about: "",
     contact: "",
+    contactPoints:[],
     linkedin: "",
     github: "",
     email: "",

@@ -38,12 +38,7 @@ const parseProjects = (mdContent) => {
         const buttonHref = buttonLine[1].split("]")[0].trim();
         buttons.push({ text: buttonText, href: buttonHref });
       }
-      console.log(name,
-        description,
-        image,
-        [tags],
-        badges,
-        buttons,)
+     
       
       projects.push({
         name,

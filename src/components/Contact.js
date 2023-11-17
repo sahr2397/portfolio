@@ -1,33 +1,38 @@
 import {
-  Divider,
-  Stack,
-  Text,
-  Container,
   Box,
+  Center,
+  Container,
+  Divider,
   HStack,
   Heading,
-  Center,
-} from "@chakra-ui/react";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
-import ProfileArray from "./ProfileArray";
+  List,
+  ListItem,
+  Stack,
+  Text,
+  chakra
+} from '@chakra-ui/react'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
+import ProfileArray from './ProfileArray'
 
 export default function Contact({ color }) {
-  const profile = ProfileArray();
+  const profile = ProfileArray()
   const linkedin = () => {
-    window.open(`${profile.linkedin}`, "_blank", "noreferrer,noopener");
-  };
+    window.open(`${profile.linkedin}`, '_blank', 'noreferrer,noopener')
+  }
   const github = () => {
-    window.open(`${profile.github}`, "_blank", "noreferrer,noopener");
-  };
+    window.open(`${profile.github}`, '_blank', 'noreferrer,noopener')
+  }
   const email = () => {
-    window.open(`mailto:${profile.email}`, "_blank", "noreferrer,noopener");
-  };
+    window.open(`mailto:${profile.email}`, '_blank', 'noreferrer,noopener')
+  }
+
+  console.log(profile)
   return (
     <>
-      <Container maxW={"3xl"} id="contact">
+      <Container maxW={'3xl'} id="contact">
         <Stack
           as={Box}
-          textAlign={"center"}
+          textAlign={'center'}
           spacing={{ base: 8, md: 14 }}
           pb={{ base: 20, md: 36 }}
         >
@@ -40,12 +45,26 @@ export default function Contact({ color }) {
             </HStack>
             <Divider orientation="horizontal" />
           </Stack>
-          <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-            <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
-            <Text color={"gray.600"} fontSize={"xl"} px={4}>
+          <Stack spacing={4} as={Container} maxW={'6xl'} textAlign={'center'}>
+            <Heading fontSize={'3xl'} fontFamily={'Nelphim'} fontWeight={400} >Let's Get in Touch!</Heading>
+            <Text color={'gray.600'} fontSize={'xl'} px={2} >
               {profile.contact}
+              <List align="left" my={4}>
+                {profile.contactPoints.map((item, index) => (
+                  <ListItem key={index} px={2}>
+                   
+                    <chakra.span color={`${color}.400`} fontWeight={600}>{item.q}</chakra.span>
+                    {item.a}
+                  </ListItem>
+                ))}
+              </List>
             </Text>
-            <Text color={`${color}.500`} fontWeight={600} fontSize={"lg"} px={4}>
+            <Text
+              color={`${color}.500`}
+              fontWeight={600}
+              fontSize={'lg'}
+              px={4}
+            >
               {profile.email}
             </Text>
             <Center>
@@ -59,6 +78,5 @@ export default function Contact({ color }) {
         </Stack>
       </Container>
     </>
-  );
+  )
 }
-
