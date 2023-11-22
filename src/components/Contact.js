@@ -49,7 +49,7 @@ export default function Contact({ color }) {
             <Heading fontSize={'3xl'} fontFamily={'Nelphim'} fontWeight={400} >Let's Get in Touch!</Heading>
             <Text color={'gray.600'} fontSize={'xl'} px={2} >
               {profile.contact}
-              <List align="left" my={4}>
+              <List align="center" my={4}>
                 {profile.contactPoints.map((item, index) => (
                   <ListItem key={index} px={2}>
                    
