@@ -76,7 +76,7 @@ export default function About({ color }) {
                     <Image
                       boxSize="200px"
                       objectFit="cover"
-                      src={`../assets/bball.webp`}
+                      src={`../portfolio/assets/bball.webp`}
                       size="sm"
                       // rounded="1.5rem"
                       // shadow="2xl"
@@ -85,7 +85,7 @@ export default function About({ color }) {
                     <Image
                       boxSize="200px"
                       objectFit="cover"
-                      src={`../assets/weights.svg`}
+                      src={`../portfolio/assets/weights.svg`}
                       size="sm"
                       // rounded="1.5rem"
                       transform={'rotate(-45deg)'}
@@ -93,7 +93,7 @@ export default function About({ color }) {
                     <Image
                       boxSize="230px"
                       objectFit="cover"
-                      src={`../assets/camera.webp`}
+                      src={`../portfolio/assets/camera.webp`}
                       size="sm"
 
                       // rounded="1.5rem"

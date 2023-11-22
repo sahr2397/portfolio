@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const parseTags = (mdContent) => {
   const tags = [];
@@ -18,7 +18,7 @@ const TagsArray = (file) => {
   const [Tags, setTags] = useState([]);
 
   useEffect(() => {
-    fetch(`/content/${file}.md`)
+    fetch(`/portfolio/content/${file}.md`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");

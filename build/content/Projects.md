@@ -4,7 +4,7 @@
   - Orchestrated seamless integration of healthcare data, optimizing accessibility and ensuring efficient utilization for ICU operations.
   - Currently exploring AI-driven analytics to enhance predictive capabilities and improve decision-making within the healthcare data management system.
 
-- ![600x200](../assets/p2.png)
+- ![600x200](../portfolio/assets/p2.png)
 - Tags: CuraSigna
 - Badges:
   - Badge [blue]
@@ -16,7 +16,7 @@
   - Led the development of CuraSigna's Share and Debenture Management System using ReactJS, NodeJS, Express, and MongoDB ensuring a seamless and engaging user experience.
   - Implemented robust authentication checks and data hashing, reinforcing system security in compliance with industry standards.
 
-- ![600x200](../assets/p1.png)
+- ![600x200](../portfolio/assets/p1.png)
 - Tags: CuraSigna
 - Badges:
   - ReactJS [purple]
@@ -31,7 +31,7 @@
   - Developed a demand forecasting model for Unilever's consumer goods in France and Egypt, utilizing Python, Numpy, Pandas, Scikit-learn, Pytorch Tabular, and Matplotlib.
   - Extracted and transformed time series data into about 180 attributes, achieving an 80% accurate rolling 2-year forecast for individual retailers. Improved accuracy by 5%, translating to multi-million-dollar business impact.
 
-- ![600x200](../assets/p3.png)
+- ![600x200](../portfolio/assets/p3.png)
 - Tags: Unilever
 - Badges:
   - Badge [blue]
@@ -43,7 +43,7 @@
   - Identified common issues in the country's medical services, including challenges with doctors' referral processes, data transfer between health institutions, and patient portal accessibility.
   - Developed a comprehensive Electronic Health Record (EHR) Framework on Blockchain, addressing issues like data privacy, accessibility, and interoperability. 
 
-- ![600x200](../assets/p4.png)
+- ![600x200](../portfolio/assets/p4.png)
 - Tags: VTU
 - Badges:
   - Badge [blue]

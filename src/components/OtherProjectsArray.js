@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const parseOtherProjects = (mdContent) => {
   const others = [];
@@ -46,7 +46,7 @@ const OtherProjectsArray = () => {
   const [OtherProjects, setOtherProjects] = useState([]);
 
   useEffect(() => {
-    fetch("/content/OtherProjects.md")
+    fetch("/portfolio/content/OtherProjects.md")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");

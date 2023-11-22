@@ -1,6 +1,6 @@
 ## CuraSigna Systems Pvt. Ltd.
 - *Software Engineer* | Apr'20 - Curr
-- ![logo512](../assets/CSLogo.jpg)
+- ![logo512](../portfolio/assets/CSLogo.jpg)
 - Tags: 2020-Current
 - Badges:
   - ReactJS [purple]
@@ -14,7 +14,7 @@
 
 ## Unilever Industries Pvt. Ltd.
 - *Data Scientist* | Jan'19 - Jun'19
-- ![logo512](../assets/UnileverLogo.svg)
+- ![logo512](../portfolio/assets/UnileverLogo.svg)
 - Tags: 2019
 - Badges:
   - Python [purple]
@@ -29,7 +29,7 @@
 
 ## GoCheck Media Pvt. Ltd.
 - *Intern* | July'18 - Dec'18
-- ![logo512](../assets/gocheckLogo.jpeg)
+- ![logo512](../portfolio/assets/gocheckLogo.jpeg)
 - Tags: 2018
 - Badges:
   - Python [purple]
