@@ -91,7 +91,7 @@ const ProfileArray = () => {
   });
 
   useEffect(() => {
-    fetch("/content/Profile.md")
+    fetch("/portfolio/content/Profile.md")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch markdown content");
