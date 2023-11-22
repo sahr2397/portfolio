@@ -55,7 +55,7 @@ export default function About({ color }) {
                 fontSize={'xl'}
                 onClick={onToggle}
               >
-                hobby.
+                hobbies.
               </Button>
               {/* <Button onClick={onToggle}>Click Me</Button> */}
               <Collapse in={isOpen} animateOpacity>

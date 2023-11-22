@@ -76,7 +76,7 @@ export default function Projects({ color }) {
                       xl: 'space-between',
                     }}
                     direction={{
-                      base: 'column-reverse',
+                      base: 'column',
                       md: index % 2 === 0 ? 'row' : 'row-reverse',
                     }}
                     wrap="no-wrap"
@@ -121,22 +121,22 @@ export default function Projects({ color }) {
                       <Text
                         color={'gray.600'}
                         fontSize={'md'}
-                        px={4}
+                        px={{base:`0`,md:`4`}}
                         lineHeight="32px"
-                        pe="40px"
+                        pe={{base:`0px`, md:`40px`}}
                         mb="auto"
                         textAlign={['center', 'center', 'left', 'left']}
                       >
-                        <List align="left">
+                        <List align={{base:`left`, md:`center`}}>
                           {project.description.map((item, index) => (
                             <ListItem key={index} px={2}>
-                              <ListIcon
-                                boxSize={5}
-                                as={ChevronRightIcon}
-                                color={`${color}.400`}
-                              />
-                              {item}
-                            </ListItem>
+                            <Flex align="start">
+                              <ListIcon boxSize={5} as={ChevronRightIcon} color={`${color}.400`}  />
+                              <Text flex="1" textAlign="justify" pb={2} mt={-2}>
+                                {item}
+                              </Text>
+                            </Flex>
+                          </ListItem>
                           ))}
                         </List>
                       </Text>
