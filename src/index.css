@@ -14,20 +14,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* & .overlay{
-position: absolute;
-display: block;
-left: 0;
-top: 0;
-height: 100%;
-width: 100%;
-background-color: Ichartreuse;
-z-index: 1;
-clip-path: circle(12% at 79% 49%);
-transition: all .5s ease-in;}
-
-&:hover{
-cursor: pointer;
-& .overlay{
-clip-path: circle(120% at 76% 49%);}} */

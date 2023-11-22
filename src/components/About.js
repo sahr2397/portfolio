@@ -1,19 +1,24 @@
 import {
   Box,
+  // chakra,
+  Button,
+  Collapse,
   Container,
   Divider,
+  Flex,
   HStack,
+  Hide,
   Icon,
+  Image,
   Stack,
   Text,
-  chakra,
   createIcon,
-  useColorModeValue,
+  useDisclosure
 } from '@chakra-ui/react'
 import ProfileArray from './ProfileArray'
-
 export default function About({ color }) {
   const profile = ProfileArray()
+  const { isOpen, onToggle } = useDisclosure()
   return (
     <>
       <Container maxW={'3xl'} id="about">
@@ -42,31 +47,87 @@ export default function About({ color }) {
           >
             <Text color={'gray.600'} fontSize={'xl'} px={4}>
               {profile.about}{' '}
-              <chakra.span color={`${color}.400`} >
+              {/* <chakra.span color={`${color}.400`} onClick={onToggle}>hobby.</chakra.span> */}
+              <Button
+                variant={'link'}
+                color={`${color}.400`}
+                colorScheme="white"
+                fontSize={'xl'}
+                onClick={onToggle}
+              >
                 hobby.
-              </chakra.span>
+              </Button>
+              {/* <Button onClick={onToggle}>Click Me</Button> */}
+              <Collapse in={isOpen} animateOpacity>
+                <Box p="40px" color={`gray.400`} mt="4" rounded="md">
+                  <Flex
+                    align="center"
+                    justify={{
+                      base: 'center',
+                      md: 'space-around',
+                      xl: 'space-between',
+                    }}
+                    direction={{
+                      base: 'column-reverse',
+                      md: 'row',
+                    }}
+                    wrap="no-wrap"
+                  >
+                    <Image
+                      boxSize="200px"
+                      objectFit="cover"
+                      src={`../assets/bball.webp`}
+                      size="sm"
+                      // rounded="1.5rem"
+                      // shadow="2xl"
+                    />
+
+                    <Image
+                      boxSize="200px"
+                      objectFit="cover"
+                      src={`../assets/weights.svg`}
+                      size="sm"
+                      // rounded="1.5rem"
+                      transform={'rotate(-45deg)'}
+                    />
+                    <Image
+                      boxSize="230px"
+                      objectFit="cover"
+                      src={`../assets/camera.webp`}
+                      size="sm"
+
+                      // rounded="1.5rem"
+                      // shadow="2xl"
+                    />
+                  </Flex>
+                </Box>
+              </Collapse>
             </Text>
 
-            <Box position={'relative'} right={'-195px'} top={'-20px'}>
-              <Icon
-                as={Arrow}
-                color={useColorModeValue('gray.800', 'gray.300')}
-                w={71}
-                position={'absolute'}
-                right={-71}
-                top={'10px'}
-              />
-              <Text
-                fontSize={'lg'}
-                fontFamily={'Nelphim'}
-                position={'absolute'}
-                right={'-95px'}
-                top={'-15px'}
-                transform={'rotate(10deg)'}
-              >
-                Click me!
-              </Text>
-            </Box>
+            {!isOpen && (
+              <Hide below='md'>
+              <Box position={'relative'} right={'-195px'} top={'-20px'}>
+                <Icon
+                  as={Arrow}
+                  // color={useColorModeValue('gray.800', 'gray.300')}
+                  w={71}
+                  position={'absolute'}
+                  right={-71}
+                  top={'10px'}
+                />
+                <Text
+                  fontSize={'lg'}
+                  fontFamily={'Nelphim'}
+                  position={'absolute'}
+                  right={'-95px'}
+                  top={'-15px'}
+                  transform={'rotate(10deg)'}
+                >
+                  Click me!
+                </Text>
+              </Box>
+              </Hide>
+            )}
           </Stack>
         </Stack>
       </Container>

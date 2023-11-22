@@ -55,6 +55,8 @@ export default function Header({ color }) {
                     strings: ['Software Developer.', 'UI/UX Designer.','Life Long Learner.'],
                     autoStart: true,
                     loop: true,
+                    delay: 100,
+                    pauseFor:1000,
                   }}
                 />
               </i>
