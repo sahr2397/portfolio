@@ -106,7 +106,7 @@ export default function About({ color }) {
 
             {!isOpen && (
               <Hide below='md'>
-              <Box position={'relative'} right={'-195px'} top={'-20px'}>
+              <Box position={'relative'} right={'-200px'} top={'-20px'}>
                 <Icon
                   as={Arrow}
                   // color={useColorModeValue('gray.800', 'gray.300')}
