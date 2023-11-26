@@ -45,8 +45,9 @@ export default function About({ color }) {
             alignSelf={'center'}
             position={'relative'}
           >
-            <Text color={'gray.600'} fontSize={'xl'} px={4}>
+            <Text maxW={['100%', '100%', '100%', '90%']} color={'gray.600'} fontSize={'xl'} px={4}>
               {profile.about}{' '}
+              </Text>
               {/* <chakra.span color={`${color}.400`} onClick={onToggle}>hobby.</chakra.span> */}
               <Button
                 variant={'link'}
@@ -54,6 +55,7 @@ export default function About({ color }) {
                 colorScheme="white"
                 fontSize={'xl'}
                 onClick={onToggle}
+                pr="10px"
               >
                 hobbies.
               </Button>
@@ -102,11 +104,11 @@ export default function About({ color }) {
                   </Flex>
                 </Box>
               </Collapse>
-            </Text>
+          
 
             {!isOpen && (
               <Hide below='md'>
-              <Box position={'relative'} right={'-200px'} top={'-20px'}>
+              <Box position={'relative'} right={'-20px'} top={'-20px'}>
                 <Icon
                   as={Arrow}
                   // color={useColorModeValue('gray.800', 'gray.300')}
@@ -119,7 +121,7 @@ export default function About({ color }) {
                   fontSize={'lg'}
                   fontFamily={'Nelphim'}
                   position={'absolute'}
-                  right={'-95px'}
+                  right={['-95px', '-95px', '-95px']}
                   top={'-15px'}
                   transform={'rotate(10deg)'}
                 >
