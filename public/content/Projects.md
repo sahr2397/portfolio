@@ -1,4 +1,4 @@
-## ICU On Cloud
+## ICU On Cloudsss
 - Description:
   - Led the conceptualization and development of a real-time decision support product, "ICUonCloud," aimed at bridging the gap in healthcare accessibility in greenfeild locations.
   - Engineered a system enabling doctors and intensivists to remotely monitor patient parameters and initiate timely interventions.
