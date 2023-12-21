@@ -1,7 +1,7 @@
 ## ICU On Cloud
 - Description:
-  - Led the conceptualization and development of a real-time decision support product, "ICUonCloud," aimed at bridging the gap in healthcare accessibility in underserved regions.
-  - Engineered a system enabling doctors and intensivists to remotely monitor patient parameters and initiate timely interventions
+  - Led the conceptualization and development of a real-time decision support product, "ICUonCloud," aimed at bridging the gap in healthcare accessibility in greenfeild locations.
+  - Engineered a system enabling doctors and intensivists to remotely monitor patient parameters and initiate timely interventions.
   - Currently exploring integration of a robust readmission risk prediction to enhance predictive capabilities and improve decision-making within the healthcare data management system.
 
 - ![600x200](../portfolio/assets/p2.png)
