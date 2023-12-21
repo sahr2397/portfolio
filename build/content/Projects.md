@@ -1,8 +1,8 @@
-## ICU On Cloudsss
+## ICU On Cloud
 - Description:
-  - Led the conceptualization and development of a real-time decision support product, "ICUonCloud," aimed at bridging the gap in healthcare accessibility in greenfeild locations.
-  - Engineered a system enabling doctors and intensivists to remotely monitor patient parameters and initiate timely interventions.
-  - Currently exploring integration of a robust readmission risk prediction to enhance predictive capabilities and improve decision-making within the healthcare data management system.
+  - Designed the SAAS model for ICU healthcare data, streamlining management and integration processes on the cloud.
+  - Orchestrated seamless integration of healthcare data, optimizing accessibility and ensuring efficient utilization for ICU operations.
+  - Currently exploring AI-driven analytics to enhance predictive capabilities and improve decision-making within the healthcare data management system.
 
 - ![600x200](../portfolio/assets/p2.png)
 - Tags: CuraSigna
