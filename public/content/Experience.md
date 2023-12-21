@@ -8,9 +8,9 @@
   - Express [purple]
   - MongoDB [purple]
 - List Items:
-  - Worked on a proposal to NASA’s Jet Propulsion Lab and won the company licensing for the manufacture of the VITAL ventilator during COVID.
-  - Developed a Share and Debenture management system using ReactJS, NodeJS, Express and MongoDB.
-  - Currently working on designing the system architecture for a SAAS model for managing and integrating healthcare data.
+  - Led winning proposal to NASA-JPL for VITAL(TM) ventilator license, contributing to pandemic response.
+  - Co-authored three patents, applying NASA-JPL strategies for rapid prototyping and iterative designs.
+  - Developed "ICUonCloud," a real-time decision support product, addressing medical professional shortages.
 
 ## Unilever Industries Pvt. Ltd.
 - *Data Scientist* | Jan'19 - Jun'19
